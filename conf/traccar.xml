@@ -4,11 +4,11 @@
 
 <properties>
 
-    <!-- Database configuration -->
-    <entry key='database.driver'>org.postgresql.Driver</entry>
-    <entry key='database.url'>jdbc:postgresql://${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}?ssl=true&amp;sslmode=require</entry>
-    <entry key='database.user'>${DATABASE_USER}</entry>
-    <entry key='database.password'>${DATABASE_PASSWORD}</entry>
+    <!-- Database configuration - H2 for testing -->
+    <entry key='database.driver'>org.h2.Driver</entry>
+    <entry key='database.url'>jdbc:h2:./data/database</entry>
+    <entry key='database.user'>sa</entry>
+    <entry key='database.password'></entry>
 
     <!-- Server configuration -->
     <entry key='web.port'>8082</entry>
