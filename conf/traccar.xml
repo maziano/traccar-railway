@@ -11,7 +11,7 @@
     <entry key='database.password'>${DATABASE_PASSWORD}</entry>
 
     <!-- Server configuration -->
-    <entry key='web.port'>${PORT}</entry>
+    <entry key='web.port'>8082</entry>
     <entry key='web.path'>./web</entry>
 
     <!-- Geocoding configuration -->
@@ -31,14 +31,5 @@
     
     <!-- Notification configuration -->
     <entry key='notificator.types'>web,mail</entry>
-    
-    <!-- Mail configuration (optional) -->
-    <entry key='mail.smtp.host'>${SMTP_HOST}</entry>
-    <entry key='mail.smtp.port'>${SMTP_PORT}</entry>
-    <entry key='mail.smtp.starttls.enable'>${SMTP_TLS}</entry>
-    <entry key='mail.smtp.ssl.enable'>${SMTP_SSL}</entry>
-    <entry key='mail.smtp.username'>${SMTP_USERNAME}</entry>
-    <entry key='mail.smtp.password'>${SMTP_PASSWORD}</entry>
-    <entry key='mail.smtp.from'>${SMTP_FROM}</entry>
 
 </properties>
