@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE properties SYSTEM 'http://java.sun.com/dtd/properties.dtd'>
+
+<properties>
+
+    <!-- Database configuration -->
+    <entry key='database.driver'>org.postgresql.Driver</entry>
+    <entry key='database.url'>jdbc:postgresql://${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}?ssl=true&amp;sslmode=require</entry>
+    <entry key='database.user'>${DATABASE_USER}</entry>
+    <entry key='database.password'>${DATABASE_PASSWORD}</entry>
+
+    <!-- Server configuration -->
+    <entry key='web.port'>${PORT}</entry>
+    <entry key='web.path'>./web</entry>
+
+    <!-- Geocoding configuration -->
+    <entry key='geocoder.enable'>true</entry>
+    <entry key='geocoder.type'>nominatim</entry>
+    <entry key='geocoder.url'>https://nominatim.openstreetmap.org/reverse</entry>
+
+    <!-- Default protocol port (disable for Railway) -->
+    <entry key='gps103.port'>0</entry>
+    
+    <!-- Logging configuration -->
+    <entry key='logger.enable'>true</entry>
+    <entry key='logger.level'>info</entry>
+    
+    <!-- Event configuration -->
+    <entry key='event.enable'>true</entry>
+    
+    <!-- Notification configuration -->
+    <entry key='notificator.types'>web,mail</entry>
+    
+    <!-- Mail configuration (optional) -->
+    <entry key='mail.smtp.host'>${SMTP_HOST}</entry>
+    <entry key='mail.smtp.port'>${SMTP_PORT}</entry>
+    <entry key='mail.smtp.starttls.enable'>${SMTP_TLS}</entry>
+    <entry key='mail.smtp.ssl.enable'>${SMTP_SSL}</entry>
+    <entry key='mail.smtp.username'>${SMTP_USERNAME}</entry>
+    <entry key='mail.smtp.password'>${SMTP_PASSWORD}</entry>
+    <entry key='mail.smtp.from'>${SMTP_FROM}</entry>
+
+</properties>
