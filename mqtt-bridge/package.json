@@ -1,0 +1,20 @@
+{
+  "name": "traccar-mqtt-bridge",
+  "version": "1.0.0",
+  "description": "MQTT to Traccar bridge service",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "mqtt": "^5.3.4",
+    "axios": "^1.6.2",
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
